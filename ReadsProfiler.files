@@ -1,0 +1,17 @@
+build-Reads_Profiler_server-Desktop-Debug/connectionwidget.cpp
+build-Reads_Profiler_server-Desktop-Debug/connectionwidget.h
+build-Reads_Profiler_server-Desktop-Debug/moc_browser.cpp
+build-Reads_Profiler_server-Desktop-Debug/moc_connectionwidget.cpp
+build-Reads_Profiler_server-Desktop-Debug/moc_mainwindow.cpp
+build-Reads_Profiler_server-Desktop-Debug/moc_qsqlconnectiondialog.cpp
+build-Reads_Profiler_server-Desktop-Debug/ui_browserwidget.h
+build-Reads_Profiler_server-Desktop-Debug/ui_mainwindow.h
+build-Reads_Profiler_server-Desktop-Debug/ui_qsqlconnection.h
+build-Reads_Profiler_server-Desktop-Debug/ui_qsqlconnectiondialog.h
+Reads_Profiler_server/browser.cpp
+Reads_Profiler_server/browser.h
+Reads_Profiler_server/connectionwidget.cpp
+Reads_Profiler_server/connectionwidget.h
+Reads_Profiler_server/main.cpp
+Reads_Profiler_server/qsqlconnectiondialog.cpp
+Reads_Profiler_server/qsqlconnectiondialog.h
