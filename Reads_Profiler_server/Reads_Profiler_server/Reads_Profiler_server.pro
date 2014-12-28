@@ -13,6 +13,10 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = Reads_Profiler_server
 TEMPLATE = app
 
+wince*: {
+    DEPLOYMENT_PLUGIN += qsqlite
+}
+
 SOURCES += main.cpp\
     qsqlconnectiondialog.cpp \
     connectionwidget.cpp \
@@ -24,8 +28,3 @@ HEADERS  += qsqlconnectiondialog.h \
 
 FORMS    +=  qsqlconnectiondialog.ui \
     browserwidget.ui
-
-
-wince*: {
-    DEPLOYMENT_PLUGIN += qsqlite
-}

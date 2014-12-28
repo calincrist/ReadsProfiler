@@ -60,7 +60,6 @@ public slots:
 
 signals:
     void statusMessage(const QString &message);
-private slots:
 };
 
 class CustomModel: public QSqlTableModel
