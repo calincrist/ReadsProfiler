@@ -4,6 +4,9 @@
 #include <QWidget>
 #include <QSqlTableModel>
 #include "ui_browserwidget.h"
+#include "networkconnection.h"
+#include "netdb.h"
+
 
 class ConnectionWidget;
 QT_FORWARD_DECLARE_CLASS(QTableView)
@@ -24,6 +27,9 @@ public:
     void insertRow();
     void deleteRow();
     void updateActions();
+
+    //variables
+    int client;
 
 public slots:
     void exec();
@@ -61,6 +67,7 @@ public slots:
 signals:
     void statusMessage(const QString &message);
 private slots:
+    void on_startServerLinkButton_clicked();
 };
 
 class CustomModel: public QSqlTableModel

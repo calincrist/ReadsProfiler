@@ -55,7 +55,7 @@ QSqlError Browser::addConnection(const QString &driver, const QString &dbName, c
 
     QSqlError err;
     QSqlDatabase db = QSqlDatabase::addDatabase(driver, QString("Browser%1").arg(++cCount));
-    db.setDatabaseName("/home/calincrist/ReadsProfiler/" + dbName);
+    db.setDatabaseName("/home/calincrist/Reads_Profiler/Reads_Profiler_server/" + dbName);
     db.setHostName(host);
     db.setPort(port);
     if (!db.open(user, passwd)) {
@@ -77,7 +77,7 @@ void Browser::addConnection()
     if (dialog.useInMemoryDatabase()) {
         QSqlError err;
         QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE", "default");
-        db.setDatabaseName("/home/calincrist/ReadsProfiler/test5.db");
+        db.setDatabaseName("/home/calincrist/Reads_Profiler/Reads_Profiler_server/library.db");
         if (!db.open()) {
             err = db.lastError();
             db = QSqlDatabase();
@@ -247,3 +247,8 @@ void Browser::on_selectAction_triggered()
         tm->select();
 }
 
+
+void Browser::on_startServerLinkButton_clicked()
+{
+
+}

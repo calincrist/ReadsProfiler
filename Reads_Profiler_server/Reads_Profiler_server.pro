@@ -16,11 +16,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
     qsqlconnectiondialog.cpp \
     connectionwidget.cpp \
-    browser.cpp
+    browser.cpp \
+    utils.cpp
 
 HEADERS  += qsqlconnectiondialog.h \
     connectionwidget.h \
-    browser.h
+    browser.h \
+    networkconnection.h \
+    utils.h
 
 FORMS    +=  qsqlconnectiondialog.ui \
     browserwidget.ui

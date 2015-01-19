@@ -47,6 +47,6 @@ int main(int argc, char *argv[])
     mainWin.show();
     if (QSqlDatabase::connectionNames().isEmpty())
         QMetaObject::invokeMethod(&browser, "addConnection", Qt::QueuedConnection);
-
+    
     return app.exec();
 }
